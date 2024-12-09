@@ -1,0 +1,34 @@
+body {
+    background-color: grey;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+
+    background-color: blue;
+
+    width: 500px;
+    height: 500px;
+
+    margin: auto;
+}
+
+#kimenet {
+    grid-row: 1;
+    grid-column: 1 / 6;
+    background-color: white;
+
+    font-size: larger;
+}
+
+.gomb {
+    font-size:  larger ;
+}
+
+.torolgomb {
+    background-color: red;
+    color: white;
+    grid-column: 4/6;
+}
