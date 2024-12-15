@@ -1,34 +1,103 @@
+
 body {
-    background-color: grey;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #89CFF0, #6A5ACD);
+    color: #fff;
 }
 
+/* Calculator Container */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-
-    background-color: blue;
-
-    width: 500px;
-    height: 500px;
-
-    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #2e2e2e;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
 }
 
+/* Output Display */
 #kimenet {
-    grid-row: 1;
-    grid-column: 1 / 6;
-    background-color: white;
-
-    font-size: larger;
+    grid-column: span 4;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+    text-align: right;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Button Styling */
 .gomb {
-    font-size:  larger ;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #555;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
-.torolgomb {
-    background-color: red;
-    color: white;
-    grid-column: 4/6;
+.gomb:hover {
+    background: #666;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Special Buttons */
+#egyenlo {
+    background: #6A5ACD;
+    color: #fff;
+}
+
+#egyenlo:hover {
+    background: #7B68EE;
+}
+
+#torol, #vissza {
+    background: #E74C3C;
+}
+
+#torol:hover, #vissza:hover {
+    background: #FF6B61;
+}
+
+
+@media (max-width: 768px) {
+    #kimenet {
+        font-size: 1.2rem;
+    }
+
+    .gomb {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        gap: 8px;
+        padding: 15px;
+    }
+
+    #kimenet {
+        padding: 10px;
+    }
+
+    .gomb {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
 }

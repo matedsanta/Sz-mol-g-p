@@ -5,30 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Számológép</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
+
         <input type="text" name="kimenet" id="kimenet" disabled>
+
+
+        <button class="gomb" id="torol">C</button>
+        <button class="gomb torolgomb" id="vissza"><<</button>
+        <button class="gomb" id="gyok">√</button>
+        <button class="gomb" id="osztva">/</button>
+
+        <button class="gomb" id="het">7</button>
+        <button class="gomb" id="nyolc">8</button>
+        <button class="gomb" id="kilenc">9</button>
+        <button class="gomb" id="szor">*</button>
+
+        <button class="gomb" id="negy">4</button>
+        <button class="gomb" id="ot">5</button>
+        <button class="gomb" id="hat">6</button>
+        <button class="gomb" id="minusz">-</button>
+
         <button class="gomb" id="egy">1</button>
         <button class="gomb" id="ketto">2</button>
         <button class="gomb" id="harom">3</button>
         <button class="gomb" id="plusz">+</button>
-        <button class="gomb" id="minusz">-</button>
-        <button class="gomb" id="negy">4</button>
-        <button class="gomb" id="ot">5</button>
-        <button class="gomb" id="hat">6</button>
-        <button class="gomb" id="szor">*</button>
-        <button class="gomb" id="osztva">/</button>
-        <button class="gomb" id="het">7</button>
-        <button class="gomb" id="nyolc">8</button>
-        <button class="gomb" id="kilenc">9</button>
-        <button class="gomb" id="gyok">√</button>
+
+        <button class="gomb" id="nulla" style="grid-column: span 2;">0</button>
         <button class="gomb" id="hatvany">^</button>
         <button class="gomb" id="egyenlo">=</button>
-        <button class="gomb" id="nulla">0</button>
-        <button class="gomb" id="torol">C</button>
-        <button class="gomb torolgomb" id="vissza"><<</button>
     </div>
 </body>
 </html>
