@@ -12,7 +12,7 @@ body {
     color: #fff;
 }
 
-/* Calculator Container */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -25,7 +25,7 @@ body {
     max-width: 400px;
 }
 
-/* Output Display */
+
 #kimenet {
     grid-column: span 4;
     padding: 15px;
@@ -38,7 +38,7 @@ body {
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Button Styling */
+
 .gomb {
     padding: 15px;
     font-size: 1.2rem;
@@ -56,7 +56,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Special Buttons */
+
 #egyenlo {
     background: #6A5ACD;
     color: #fff;
