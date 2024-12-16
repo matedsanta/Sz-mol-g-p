@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #89CFF0, #6A5ACD);
+    background: linear-gradient(135deg, #58b9e6, #e9049d);
     color: #fff;
 }
 
@@ -56,6 +56,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.opergomb {
+    background-color: rgb(204, 152, 7);
+}
 
 #egyenlo {
     background: #6A5ACD;
