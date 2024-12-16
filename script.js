@@ -112,4 +112,40 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.egyenlo.addEventListener("click", egyenloClick);
     buttons.torol.addEventListener("click", torles);
     buttons.vissza.addEventListener("click", visszavon);
+
+    addEventListener("keypress", (event) => {
+        console.log(event.key)
+        let valid_values = [0,1,2,3,4,5,6,7,8,9]
+        if (valid_values.includes(parseInt(event.key))) {
+            beir(parseInt(event.key))
+        } else {
+            switch (event.key) {
+                case "+":
+                    operator("+");
+                    break;
+                case "-":
+                    operator("-");
+                    break;
+                case "*":
+                    operator("*");
+                    break;
+                case "/":
+                    operator("/");
+                    break;
+                case "Enter":
+                    egyenloClick();
+                    break;
+                case "b":
+                    visszavon();
+                    break;
+                case "c":
+                    torles();
+                    break;
+                    
+
+
+            }
+        }
+    })
 });
+
